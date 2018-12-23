@@ -1,7 +1,7 @@
 <?php
 namespace SgS\Libraries\Core\Heros;
 
-use SgS\Libraries\Core\Hero;
+use SgS\Libraries\Core\Hero\Heros;
 
 class CaoCao extends Hero
 {

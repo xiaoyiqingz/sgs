@@ -14,8 +14,18 @@ class TestController extends Controller
         $liubei = new LiuBei;
         echo $liubei;
 
+        echo "\n";
+
         $caocao = new CaoCao;
         echo $caocao;
+
+        echo "\n";
+
+        $liubei_skills = $liubei->skills();
+
+        foreach ($liubei_skills as $skill) {
+            $liubei->handle($skill);
+        }
 
         return ['code' => 20000, 'message' => 'Success'];
     }
