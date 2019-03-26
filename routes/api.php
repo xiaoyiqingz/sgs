@@ -17,4 +17,7 @@ use Illuminate\Http\Request;
 //    return $request->user();
 //});
 
-Route::get('test', 'TestController@test');
+Route::group(['prefix' => 'test'], function () {
+    Route::get('hero', 'TestController@hero');
+    Route::get('cards', 'TestController@cards');
+});
