@@ -18,6 +18,9 @@
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
+                background-repeat: no-repeat;
+                -webkit-background-size: cover;
+                background-image: url( {{ asset('images/bg.jpg')}} );
             }
 
             .full-height {
@@ -92,6 +95,11 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
+                <!--
+                <div>
+                    <img src={{asset('images/bg.jpeg')}}>
+                </div>
+                -->
             </div>
         </div>
     </body>
